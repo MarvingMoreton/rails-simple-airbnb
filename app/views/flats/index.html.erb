@@ -1,0 +1,9 @@
+<%# <H1>FLATS WORLD</H1> %>
+<ul>
+
+  <% @flats.each do |flat| %>
+  <div class="card-body d-inline-flex">
+    <li class="list-group-item"><%= link_to flat.name, flat_path(flat) %></li>
+  </div>
+  <% end %>
+</ul>
